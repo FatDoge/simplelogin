@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<script src="./js/main.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+</head>
+<body>
+	<!-- 头部布局 -->
+<div class="header">
+	<p class="headerTitle">
+		<span class="fl"><a href="#">关闭</a></span>
+		登录
+		<span class="fr"><a href="#">注册</a></span>
+	</p>
+</div>
+<!-- 表单布局 -->
+<div>
+<form action="#" onsubmit="return formJudge();">
+	<div class="inputStyle">
+		<img src="./images/phone.png" class="fl">
+		<input type="text" name="username" placeholder="请输入手机号" id="username">
+	</div>
+	<div class="inputStyle">
+		<img src="./images/lock.png" class="fl">
+		<input type="password" name="password" placeholder="请输入密码" id="password">
+	</div>
+	<button type="submit"><p class="headerTitle">登录</p></button>
+</form>
+</div>
+<!-- 忘记密码 -->
+<div class="forgetPassword"><a href="#">忘记密码?</a></div>
+<!-- 载入动画 -->
+<div class="container">
+	<div id="loading">
+		<div class="square">
+			<div class="blue"></div>
+		</div>
+		<p class="loadingTitle">正在载入</p>
+	</div>
+</div>
+<!-- 提示 -->
+<div class="container">
+	<div id="loginTips">密码错误</div>
+</div>
+</body>
+</html>
